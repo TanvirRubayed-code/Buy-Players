@@ -1,7 +1,26 @@
-.player{
+/* .player{
     background-color: gray;
     color: white;
     border: 2px solid salmon;
     border-radius: 2px;
 
+} */
+.player{
+    display: flex;
+}
+.player-container {
+    width: 70%;
+    margin:10px 10px 10px 10%;
+    border-right: 1px solid lightgray;
+    display:flex;
+    flex-wrap: wrap;
+}
+.cartstyle{
+    line-height: 10px;
+}
+.cartstyle h2{
+    font-size: 100%;
+}
+.cart-container h2{
+    color: tomato;
 }
