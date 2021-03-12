@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import data from '../../FakeData/fakeData.json';
+import React, { useEffect, useState } from 'react';
+import fakeData from '../../FakeData/fakeData.json';
 import Shop from '../Shop/Shop';
 import './Players.css';
 
@@ -7,6 +7,11 @@ import './Players.css';
 
 const Players = () => {
 
+
+    const [data, setData]= useState([]);
+    useEffect(()=>{
+        setData(fakeData)
+    },[])
 
     const [list, setPlayerList] = useState([]);
     const total = list.reduce((total,ply) => total+ply.salary,0)
